@@ -1,0 +1,17 @@
+node_modules/
+.next/
+out/
+cache/
+artifacts/
+coverage/
+typechain-types/
+.tmp/
+
+.env
+.env.production
+.env*.local
+
+data/allowlist.csv
+src/generated/allowlist.generated.json
+assets/metadata.json
+assets/uploads.json

@@ -1,0 +1,26 @@
+services:
+  nft-mint-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        NEXT_PUBLIC_CONTRACT_ADDRESS: ${NEXT_PUBLIC_CONTRACT_ADDRESS}
+        NEXT_PUBLIC_CONTRACT_DEPLOY_BLOCK: ${NEXT_PUBLIC_CONTRACT_DEPLOY_BLOCK}
+        NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID: ${NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID}
+        NEXT_PUBLIC_NFT_IMAGE_URL: ${NEXT_PUBLIC_NFT_IMAGE_URL:-}
+    image: soneium-minato-attendance-sbt:latest
+    restart: unless-stopped
+    expose:
+      - "3000"
+    environment:
+      NODE_ENV: production
+      NEXT_TELEMETRY_DISABLED: "1"
+      NEXT_PUBLIC_CONTRACT_ADDRESS: ${NEXT_PUBLIC_CONTRACT_ADDRESS}
+      NEXT_PUBLIC_CONTRACT_DEPLOY_BLOCK: ${NEXT_PUBLIC_CONTRACT_DEPLOY_BLOCK}
+      NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID: ${NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID}
+      NEXT_PUBLIC_NFT_IMAGE_URL: ${NEXT_PUBLIC_NFT_IMAGE_URL:-}
+
+networks:
+  default:
+    name: ${DOCKER_NETWORK:-caddy}
+    external: true

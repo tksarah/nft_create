@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1200" viewBox="0 0 1200 1200" role="img" aria-labelledby="title desc">
+  <title id="title">Attendance SBT placeholder artwork</title>
+  <desc id="desc">A geometric placeholder image for a Soneium Minato attendance token.</desc>
+  <rect width="1200" height="1200" fill="#101514"/>
+  <path d="M0 0h1200v1200H0z" fill="#101514"/>
+  <circle cx="600" cy="600" r="402" fill="#1d2723"/>
+  <circle cx="600" cy="600" r="312" fill="#26312d"/>
+  <path d="M600 214 934 407v386L600 986 266 793V407z" fill="#0f1513" stroke="#3ad29f" stroke-width="18"/>
+  <path d="M600 315 846 457v286L600 885 354 743V457z" fill="#16201c" stroke="#f0c96a" stroke-width="10"/>
+  <path d="M600 420 755 510v180L600 780 445 690V510z" fill="#3ad29f"/>
+  <path d="M600 482 701 540v120l-101 58-101-58V540z" fill="#101514"/>
+  <path d="M600 535 656 568v64l-56 33-56-33v-64z" fill="#f4f0e8"/>
+  <text x="600" y="170" fill="#f4f0e8" font-family="Arial, sans-serif" font-size="54" font-weight="700" text-anchor="middle">Attendance SBT</text>
+  <text x="600" y="1060" fill="#aeb8ae" font-family="Arial, sans-serif" font-size="34" font-weight="700" text-anchor="middle">Soneium Minato</text>
+</svg>
