@@ -203,7 +203,6 @@ h1 {
   overflow-wrap: anywhere;
 }
 
-.adminLink,
 .secondaryLink {
   display: inline-flex;
   align-items: center;

@@ -15,9 +15,6 @@ export default function Home() {
         </div>
         <div className="mainPanelStack">
           <MintPanel />
-          <a className="adminLink" href="/admin">
-            Admin
-          </a>
         </div>
       </section>
     </main>

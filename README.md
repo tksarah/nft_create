@@ -24,6 +24,8 @@ Mint画面は `http://127.0.0.1:3000/`、管理画面は `http://127.0.0.1:3000/
 - `NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID`: RainbowKit/WalletConnectのProject ID
 - `NEXT_PUBLIC_CONTRACT_ADDRESS`: デプロイ済みコントラクトアドレス
 - `NEXT_PUBLIC_CONTRACT_DEPLOY_BLOCK`: `AllowlistSet` イベント取得開始ブロック
+- `ADMIN_BASIC_AUTH_USER`: `/admin` のBasic認証ユーザー名
+- `ADMIN_BASIC_AUTH_PASSWORD`: `/admin` のBasic認証パスワード
 - `NFT_METADATA_URI`: コントラクトに設定するmetadata URI
 
 production Webコンテナには `DEPLOYER_PRIVATE_KEY`、`PINATA_JWT`、`BLOCKSCOUT_API_KEY` を渡さないでください。
@@ -58,6 +60,7 @@ Blockscout/Sourcify verifyは任意です。ソース公開を伴うため、実
 ## Allowlist Admin
 
 `/admin` を開き、owner walletで接続します。
+`/admin` はBasic認証が必要です。開く前に `ADMIN_BASIC_AUTH_USER` と `ADMIN_BASIC_AUTH_PASSWORD` を設定してください。
 
 - `Add to allowlist`: 入力したアドレスをMint対象にします。
 - `Remove from allowlist`: 入力したアドレスをMint対象から外します。
